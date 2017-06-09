@@ -1,1 +1,1 @@
-autocmd BufEnter *.tt setlocal filetype=ttstar
+autocmd BufNewFile,BufRead,BufEnter *.tt setf ttstar

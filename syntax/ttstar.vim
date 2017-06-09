@@ -35,3 +35,4 @@ highlight def link ttType Include
 highlight def link ttLineComment Comment
 highlight def link ttBlockComment Comment
 highlight def link ttTodo Todo
+highlight def link ttKeyword Keyword
