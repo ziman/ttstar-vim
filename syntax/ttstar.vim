@@ -17,7 +17,8 @@ syn region ttParens matchgroup=ttDelimiter start="(" end=")" contains=TOP,ttType
 syn region ttBrackets matchgroup=ttDelimiter start="\[" end="]" contains=TOP,ttTypeDecl
 syn region ttBlock matchgroup=ttDelimiter start="{" end="}" contains=TOP,ttTypeDecl
 
-syn keyword ttKeyword case with where data let in of
+syn keyword ttData data where
+syn keyword ttKeyword case with let in of
 syn keyword ttImport postulate foreign import
 
 syn match ttLambda "\\"
@@ -30,6 +31,7 @@ syn region ttBlockComment start="{-" end="-}" contains=ttBlockComment,ttTodo,@Sp
 syn match ttIdentifier "[a-zA-Z][a-zA-z0-9_']*" contained
 syn region ttString start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@Spell
 syn match ttColon ":[RE]:\|:"
+syn match ttEquals "="
 
 highlight link ttIdentifier Identifier
 highlight link ttBlock Statement
@@ -44,3 +46,5 @@ highlight link ttString String
 highlight link ttColon Delimiter
 highlight link ttImport Type
 highlight link ttLambda Keyword
+highlight link ttData Type
+highlight link ttEquals Keyword
