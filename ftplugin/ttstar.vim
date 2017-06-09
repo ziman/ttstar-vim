@@ -4,4 +4,4 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-setl autoindent sw=2 sts=4 ts=8 et
+setl autoindent sw=2 sts=2 ts=8 et
