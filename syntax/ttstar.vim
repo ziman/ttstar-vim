@@ -18,7 +18,7 @@ syn region ttBrackets matchgroup=ttDelimiter start="\[" end="]" contains=TOP,ttT
 syn region ttBlock matchgroup=ttDelimiter start="{" end="}" contains=TOP,ttTypeDecl
 
 syn keyword ttData data where
-syn keyword ttKeyword case with let in of
+syn keyword ttKeyword case with let in of forall do
 syn keyword ttImport postulate foreign import
 
 syn match ttLambda "\\"
