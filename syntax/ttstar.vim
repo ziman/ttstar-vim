@@ -21,6 +21,7 @@ syn keyword ttData data where
 syn keyword ttKeyword case with let in of forall do
 syn keyword ttImport postulate foreign import
 
+syn match ttOperator "\$"
 syn match ttLambda "\\"
 syn match ttNumber "\<[0-9]\+\>\|\<0[xX][0-9a-fA-F]\+\>\|\<0[oO][0-7]\+\>"
 syn match ttDelimiter  "[,.]\|->"
@@ -48,3 +49,4 @@ highlight link ttImport Type
 highlight link ttLambda Keyword
 highlight link ttData Type
 highlight link ttEquals Keyword
+highlight link ttOperator Operator
